@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg, #52b0ee70, #d3135d, #1f7091, #157c64);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 20s ease-in infinite;
+    padding-top: 2%;
+}
+
+@keyframes change{
+    0%{ background-position: 0 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0 50%; }
+}
+#menu{
+    padding-top: 0px;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    margin-top: 0px;
+    list-style: none;
+    padding: 0;
+    background: linear-gradient(35deg, #513a64, #410d6b);
+    z-index: 10;
+}
+
+#menu li{
+    display: inline;
+}
+
+#menu li a{
+    color: rgb(248, 241, 241);
+    padding: 20px;
+    margin-left: 30px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .3s;
+}
+
+#menu li a:hover{
+    background-color: rgb(94, 20, 155);
+}
+
+h2{
+    padding-left: 2%;
+}
+
+img{
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;      
+}
+
